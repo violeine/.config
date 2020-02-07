@@ -1,0 +1,691 @@
+;*********************************************************
+;
+;                          COLORS
+;
+;**********************************************************
+
+[colors]
+; Base colors from .Xresources
+bg        =   ${xrdb:background}
+bg-alt    =   #{xrdb:color0}
+fg        =   ${xrdb:foreground}
+fg-alt    =   ${xrdb:color8}
+red       =   ${xrdb:color1}
+green     =   ${xrdb:color2}
+yellow    =   ${xrdb:color3}
+blue      =   ${xrdb:color4}
+blue-alt  =   ${xrdb:color12}
+magenta   =   ${xrdb:color5}
+cyan      =   ${xrdb:color6}
+white     =   ${xrdb:color15}
+
+;[colors]
+;white = #c5c8c6
+gray = #585858
+black = #090909
+;red = #a54242
+;blue = #95aec7
+;yellow = #c7ae95
+;green = #8c9440
+
+background-alt = #3C5A46
+background-unf = #2E463E
+background-mod0 = #3C5A46
+background-mod1 = #546E53
+background-mod2 = #708963
+background-alrt = #A1BB76
+foreground = #F3F3BA
+foreground-alt = #F3F3BA
+primary = #F3F3BA
+secondary = #F3F3BA
+
+;**********************************************************
+;
+;                       GLOBAL WM SETTINGS
+;
+;**********************************************************
+
+[global/wm]
+margin-top = 5
+margin-bottom = 0
+
+;*********************************************************
+;
+;                       BAR SETTINGS I3
+;
+;********************************************************
+
+[bar/top]
+monitor = ${env:MONITOR:eDP1}
+bottom = false
+;width = 1800
+width = 100%
+height = 30
+offset-x = 8
+offset-y = 8
+margin-left = 8
+margin-right = 8
+
+override-redirect = true
+wm-restack = i3
+
+enable-ipc = true
+;dock = true
+
+background = ${colors.bg}
+foreground = ${colors.fg}
+
+;border-bottom-size = 1
+;border-top-size = 1
+;border-top-color = ${colors.fg}
+;border-bottom-color = ${colors.fg}
+;border-left-size = 1
+;border-left-color = ${colors.fg}
+;border-right-size = 1
+;border-right-color = ${colors.fg}
+
+spacing = 0
+padding-left = 2
+padding-right = 2
+module-margin-left = 1
+module-margin-right = 1
+
+;font-0 = Dina:size=6:antialias=false;1
+;font-1 = Siji:antialias=false;1
+font-0 = SauceCodePro Nerd Font:size=7:antialias=false;1
+
+font-1 = Font Awesome 5 Free:size=6:antialias=false;0
+
+;modules-left = menu i3 mpd
+;modules-center = date
+;modules-right = uptime mail temperature cpu memory wlan battery power-label
+
+modules-left = i3 
+modules-center = mpd volume
+modules-right = updates backlight wlan battery date menu0
+
+;underline-size = 2
+;underline-color = ${colors.white}
+
+;tray-position =hidden
+;tray-padding = 11
+;tray-transparent = true
+;tray-offset-y = 22
+;tray-offset-x = -0
+;tray-maxsize = 18
+;tray-detached = true
+
+
+[bar/top_HDMI-0]
+monitor = ${env:MONITOR:HDMI-0}
+bottom = false 
+;width = 1904
+width = 100%
+height = 30
+offset-x = 50% 
+offset-y = 0
+margin-left = 8
+margin-right = 8
+;override-redirect = true
+;wm-restack = i3
+;enable-ipc = false
+;dock = true
+
+background = ${colors.bg}
+foreground = ${colors.fg}
+
+;border-bottom-size = 1
+;border-top-size = 1
+;border-top-color = ${colors.fg}
+;border-bottom-color = ${colors.fg}
+;border-left-size = 1
+;border-left-color = ${colors.fg}
+;border-right-size = 1
+;border-right-color = ${colors.fg}
+
+spacing = 0
+padding-left = 2
+padding-right = 2
+module-margin-left = 1
+module-margin-right = 1
+
+;font-0 = Dina:size=6:antialias=false;1
+;font-1 = Siji:antialias=false;1
+font-0 = SauceCodePro Nerd Font:size=7:antialias=false;1
+font-1 = Font Awesome 5  Free:size=6:antialias=false;1
+
+;modules-left = menu i3 mpd
+;modules-center = date
+;modules-right = uptime mail temperature cpu memory wlan battery power-label
+
+modules-left = i3 
+modules-center = mpd volume
+modules-right = updates backlight wlan battery date menu0
+
+;underline-size = 2
+;underline-color = ${colors.white}
+
+;tray-position =hidden
+;tray-padding = 11
+;tray-transparent = true
+;tray-offset-y = 22
+;tray-offset-x = -0
+;tray-maxsize = 18
+;tray-detached = true
+
+;*********************************************************
+;
+;                       BAR SETTINGS BSPWM
+;
+;********************************************************
+
+[bar/bspwm_top]
+monitor = ${env:MONITOR:HDMI-0}
+bottom = false
+;width = 200
+width = 100%
+height = 30
+;offset-x = 50%:-100
+offset-y = 4
+;margin-left = 8
+;margin-right = 8
+margin-bottom=4
+
+
+override-redirect = false
+wm-restack = bspwm
+enable-ipc = true
+;dock = true
+
+background = ${colors.bg}
+foreground = ${colors.fg}
+
+;border-bottom-size = 1
+;border-top-size = 1
+;border-top-color = ${colors.fg}
+;border-bottom-color = ${colors.fg}
+;border-left-size = 1
+;border-left-color = ${colors.fg}
+;border-right-size = 1
+;border-right-color = ${colors.fg}
+
+spacing = 0
+padding-left = 1
+padding-right = 1
+module-margin-left = 1
+module-margin-right = 1
+
+;font-0 = Dina:size=6:antialias=false;1
+;font-1 = Siji:antialias=false;1
+font-0 = SauceCodePro Nerd Font:size=8:antialias=true;1
+font-1 = Font Awesome 5 Free:size=6:antialias=false;1
+
+;modules-left = menu i3 mpd
+;modules-center = date
+;modules-right = uptime mail temperature cpu memory wlan battery power-label
+
+modules-left = bspwm
+modules-center = xwindow 
+modules-right = volume updates wlan battery date menu0
+
+;underline-size = 2
+;underline-color = ${colors.white}
+
+;tray-position =hidden
+;tray-padding = 11
+;tray-transparent = true
+;tray-offset-y = 22
+;tray-offset-x = -0
+;tray-maxsize = 18
+;tray-detached = true
+
+
+
+[bar/bspwm_2ndmorn]
+monitor = ${env:MONITOR:eDP1}
+bottom = false
+;width = 200
+width = 100%
+height = 30
+;offset-x = 50%:-100
+offset-y = 4
+;margin-left = 8
+;margin-right = 8
+
+override-redirect = false
+wm-restack = bspwm
+enable-ipc = true
+;dock = true
+
+background = ${colors.bg}
+foreground = ${colors.fg}
+
+;border-bottom-size = 1
+;border-top-size = 1
+;border-top-color = ${colors.fg}
+;border-bottom-color = ${colors.fg}
+;border-left-size = 1
+;border-left-color = ${colors.fg}
+;border-right-size = 1
+;border-right-color = ${colors.fg}
+
+spacing = 0
+padding-left = 1
+padding-right = 1
+module-margin-left = 1
+module-margin-right = 1
+
+;font-0 = Dina:size=6:antialias=false;1
+;font-1 = Siji:antialias=false;1
+font-0 = SauceCodePro Nerd Font:size=8:antialias=true;1
+font-1 = Font Awesome 5 Free:size=6:antialias=false;1
+
+;modules-left = menu i3 mpd
+;modules-center = date
+;modules-right = uptime mail temperature cpu memory wlan battery power-label
+
+modules-left = bspwm
+modules-center = xwindow 
+modules-right = volume updates battery date menu0
+
+;underline-size = 2
+;underline-color = ${colors.white}
+
+tray-position = center
+;tray-padding = 11
+;tray-transparent = true
+;tray-offset-y = 2
+tray-offset-x = 650
+;tray-maxsize = 18
+tray-detached = true	
+
+
+[bar/bspwm_bottom]
+monitor = ${env:MONITOR:HDMI-0}
+bottom = true
+width = 1900
+;width = 100%
+height = 30
+offset-x = 8
+offset-y = 8
+margin-left = 8
+margin-right = 8
+
+override-redirect = false
+wm-restack = bspwm
+enable-ipc = true
+;dock = true
+
+background = ${colors.bg}
+foreground = ${colors.fg}
+
+;border-bottom-size = 1
+;border-top-size = 1
+;border-top-color = ${colors.fg}
+;border-bottom-color = ${colors.fg}
+;border-left-size = 1
+;border-left-color = ${colors.fg}
+;border-right-size = 1
+;border-right-color = ${colors.fg}
+
+spacing = 0
+padding-left = 2
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 1
+
+;font-0 = Dina:size=6:antialias=false;1
+;font-1 = Siji:antialias=false;1
+font-0 = SauceCodePro Nerd Font:size=8:antialias=true;1
+font-1 = Font Awesome 5 Free:size=6:antialias=false;1
+
+;modules-left = menu i3 mpd
+;modules-center = date
+;modules-right = uptime mail temperature cpu memory wlan battery power-label
+
+;modules-left = pogoda
+moudules-left = cpu ram
+modules-center = mpd volume filesystem 
+modules-right = updates wlan battery date menu0
+
+;underline-size = 2
+;underline-color = ${colors.white}
+
+;tray-position =hidden
+;tray-padding = 11
+;tray-transparent = true
+;tray-offset-y = 22
+;tray-offset-x = -0
+;tray-maxsize = 18
+;tray-detached = true
+
+
+;**********************************************************
+;
+;                   MODULES SETTINGS
+;
+;**********************************************************
+
+[module/xwindow]
+type = internal/xwindow
+label = %title%
+label-maxlen = 30
+
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+
+mount-0 = /
+;mount-1 = /home
+;mount-2 = /invalid/mountpoint
+
+label-mounted =  %used%
+label-mounted-underline = ${colors.white}
+label-mounted-padding = 1
+
+label-unmounted =
+label-unmounted-foreground = ${colors.black}
+
+[module/bspwm]
+type = internal/bspwm
+
+;format = <label-mode><label-state>
+label-focused = 
+;label-focused-background = ${colors.background-alt}
+;label-focused-underline= ${colors.green}
+label-focused-foreground = ${colors.green}
+label-focused-padding = 1:/2
+
+label-occupied = 
+label-occupied-foreground = ${colors.green}
+label-occupied-padding = 1:/2
+
+label-urgent = 
+label-urgent-foreground = ${colors.red}
+label-urgent-padding = 1:/2
+
+label-empty = 
+;label-empty-foreground = ${colors.red}
+label-empty-padding = 1:/2
+
+;label-monocle = 恵
+;label-tiled = 
+;;label-fullscreen = 
+;;label-floating = 
+;;label-pseudotiled = P
+;;label-locked = 
+;;label-locked-foreground = #bd2c40
+;;label-sticky = 
+;;label-sticky-foreground = #fba922
+;;label-private = 
+;;label-private-foreground = #bd2c40
+;;label-marked = M
+
+[module/mpd]
+type = internal/mpd
+
+host = 127.0.0.1
+port = 6600
+
+intervel = 2
+
+format-online = <label-song>   <icon-prev> <icon-play> <icon-stop> <icon-pause> <icon-next>
+format-offline = <label-offline>
+
+label-offline =  no music
+label-offline-foreground = ${colors.gray}
+
+label-song = %artist% - %title%
+label-song-maxlen = 95
+label-song-ellipsis = true
+;label-song-foreground = ${colors.green}
+
+icon-prev  = 
+icon-next  = 
+icon-seekb = 
+icon-seekf = 
+icon-stop  = 
+icon-pause = 
+icon-play  = 
+
+icon-random = S
+icon-repeat = R
+
+toggle-on-foreground = #e60053
+toggle-off-foreground = #66
+
+[module/gput]
+type = custom/script
+label = %{F${colors.white}  %output%C %{F-}
+label-underline = ${colors.white}
+label-foreground = ${colors.white}
+
+; Available tokens:
+;   %counter%
+; Command to be executed (using "/usr/bin/env sh -c [command]")
+exec = nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits
+
+; Will the script output continous content?
+; Default: false
+; tail = true
+
+; Seconds to sleep between updates
+; Default: 2 (0 if `tail = true`)
+interval = 90
+
+[module/cpu]
+format-label = internal/cpu
+
+format = <label>
+
+ramp-coreload-0 = ▁
+ramp-coreload-1 = ▂
+ramp-coreload-2 = ▃
+ramp-coreload-3 = ▄
+ramp-coreload-4 = ▅
+ramp-coreload-5 = ▆
+ramp-coreload-6 = ▇
+ramp-coreload-7 = █
+ramp-coreload-underline = ${colors.white}
+
+type = internal/cpu
+interval = 2
+label = %{F${colors.white}  %percentage% %{F-}
+label-underline = ${colors.white}
+padding= 2
+
+
+[module/memory]
+type = internal/memory
+interval = 2
+
+label = %{F${colors.white}  %percentage_used% %{F-}
+label-underline = ${colors.white}
+label-foreground = ${colors.white}
+
+[module/wlan]
+type = internal/network
+interface = wlp0s20f3
+interval = 3.0
+
+format-connected-padding = 1
+format-disconnected-padding = 1
+
+format-connected = <label-connected>
+format-connected-underline = ${colors.white}
+format-disconnected-underline = ${colors.gray}
+
+label-connected =  %essid% %signal%% 
+label-disconnected = 
+label-disconnected-foreground = ${colors.gray}
+
+
+[module/eth]
+type = internal/network
+interface = enp3s0
+interval = 3.0
+
+format-connected-padding = 1
+format-disconnected-padding = 1
+
+format-connected-underline = ${colors.white}
+format-disconnected-underline = ${colors.gray}
+
+label-connected = 
+label-disconnected = 
+label-disconnected-foreground = ${colors.gray}
+
+
+[module/date]
+type = internal/date
+date =   %H:%M
+date-alt =   %d-%m-%Y %H:%M
+interval = 5
+format-underline = ${colors.white}
+;format-background = ${colors.black}
+format-foreground = ${colors.white}
+format-padding = 1
+
+
+[module/volume]
+type = internal/pulseaudio
+
+use-ui-max=false
+format-volume = <ramp-volume> <label-volume>
+format-volume-width=20
+label-volume = %percentage:3:3% 
+label-volume-foreground = ${root.foreground}
+
+
+label-muted =  muted
+
+ramp-volume-0 =   
+ramp-volume-1 = 
+ramp-volume-2 = 
+label-muted-foreground = ${colors.gray}
+
+bar-volume-width = 10
+bar-volume-foreground-0 = ${colors.green}
+bar-volume-foreground-1 = ${colors.green}
+bar-volume-foreground-2 = ${colors.green}
+bar-volume-foreground-3 = ${colors.green}
+bar-volume-foreground-4 = ${colors.yellow}
+bar-volume-foreground-5 = ${colors.red}
+bar-volume-gradient = false
+bar-volume-indicator = 
+bar-volume-indicator-font = 4
+bar-volume-indicator-foreground = ${colors.white}
+bar-volume-fill = 
+bar-volume-fill-font = 4
+bar-volume-empty = 
+bar-volume-empty-font = 4
+bar-volume-empty-foreground = ${colors.gray}
+
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 65
+
+format = <label>
+format-underline = ${colors.white}
+format-warn = <label-warn>
+format-warn-underline = ${colors.red}
+
+format-padding = 1
+format-warn-padidng = 1
+
+label =  %temperature%
+label-warn =  %temperature%
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-foreground = #55
+
+
+[module/menu0]
+type = custom/menu
+
+format = <label-toggle> <menu>
+format-underline = ${colors.white}
+format-padding = 1
+
+menu-0-0 =  " shutdown  "
+menu-0-0-exec = shutdown now
+menu-0-1 =  " restart  "
+menu-0-1-exec = shutdown -r now
+;menu-0-2 =  " logout  "
+;menu-0-2-exec = logout
+menu-0-2 =   cancel
+
+label-open =  
+label-close =
+
+[module/updates]
+type = custom/script
+
+exec = echo
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 97
+time-format = %H:%M
+
+;format-full-background = ${colors.background-mod2}
+;format-charging-background = ${colors.background-mod1}
+format-charging = "⁣  <label-charging> <animation-charging> "
+format-charging-underline = ${colors.white}
+label-charging = %percentage%% %time%
+
+;format-discharging-background = ${colors.background-alrt}
+format-discharging = "⁣  <label-discharging> <ramp-capacity> "
+format-discharging-underline = ${self.format-charging-underline}
+label-discharging = %percentage%% %time%
+
+format-full = "  <label-full>   "
+format-full-prefix-foreground = ${colors.green}
+format-full-underline = ${self.format-charging-underline}
+label-full = FULL
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+ramp-capacity-0-foreground = ${colors.red}
+ramp-capacity-1-foreground = ${colors.yellow}
+ramp-capacity-2-foreground = ${colors.green}
+ramp-capacity-3-foreground = ${colors.green}
+ramp-capacity-4-foreground = ${colors.green}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-foreground = ${colors.green}
+animation-charging-framerate = 750
+
+[module/backlight]
+type = internal/xbacklight
+enable-scroll = false
+format = "<label> "
+label =  %percentage%%
+
+[module/pogoda]
+type = custom/script
+interval = 10
+format = "<label>  "
+format-prefix = " "
+format-prefix-foreground = #695742
+;format-underline = #c38159
+exec = ~/.config/polybar/pogoda
+
+
+; vim:ft=dosini
