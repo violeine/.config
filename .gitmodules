@@ -1,6 +1,6 @@
-[submodule "vim"]
-	path = vim
-	url = https://github.com/violeine/vim.git
 [submodule ".config/vim/.vim"]
 	path = .config/vim/.vim
 	url = https://github.com/violeine/vim.git
+[submodule ".tmux/plugins/tpm"]
+	path = .tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
