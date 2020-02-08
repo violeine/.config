@@ -35,15 +35,15 @@ fi
 
 mornNum=$(xrandr -q | grep -w connected | wc -l);
 
-if [[ mornNum -eq 2 ]]; then 
+if [[ mornNum -eq 2 ]]; then
 	sleep 1
 	2morn
 else
-	sleep 1
+#	sleep 1
 	1morn
 fi
 
-nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }"
+#nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }"
 
 sleep 3
 

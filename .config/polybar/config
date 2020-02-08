@@ -100,7 +100,7 @@ font-1 = Font Awesome 5 Free:size=6:antialias=false;0
 ;modules-center = date
 ;modules-right = uptime mail temperature cpu memory wlan battery power-label
 
-modules-left = i3 
+modules-left = i3
 modules-center = mpd volume
 modules-right = updates backlight wlan battery date menu0
 
@@ -118,11 +118,11 @@ modules-right = updates backlight wlan battery date menu0
 
 [bar/top_HDMI-0]
 monitor = ${env:MONITOR:HDMI-0}
-bottom = false 
+bottom = false
 ;width = 1904
 width = 100%
 height = 30
-offset-x = 50% 
+offset-x = 50%
 offset-y = 0
 margin-left = 8
 margin-right = 8
@@ -158,7 +158,7 @@ font-1 = Font Awesome 5  Free:size=6:antialias=false;1
 ;modules-center = date
 ;modules-right = uptime mail temperature cpu memory wlan battery power-label
 
-modules-left = i3 
+modules-left = i3
 modules-center = mpd volume
 modules-right = updates backlight wlan battery date menu0
 
@@ -180,7 +180,7 @@ modules-right = updates backlight wlan battery date menu0
 ;********************************************************
 
 [bar/bspwm_top]
-monitor = ${env:MONITOR:HDMI-0}
+monitor = ${env:MONITOR:HDMI-1}
 bottom = false
 ;width = 200
 width = 100%
@@ -225,7 +225,7 @@ font-1 = Font Awesome 5 Free:size=6:antialias=false;1
 ;modules-right = uptime mail temperature cpu memory wlan battery power-label
 
 modules-left = bspwm
-modules-center = xwindow 
+modules-center = xwindow
 modules-right = volume updates wlan battery date menu0
 
 ;underline-size = 2
@@ -285,7 +285,7 @@ font-1 = Font Awesome 5 Free:size=6:antialias=false;1
 ;modules-right = uptime mail temperature cpu memory wlan battery power-label
 
 modules-left = bspwm
-modules-center = xwindow 
+modules-center = xwindow
 modules-right = volume updates battery date menu0
 
 ;underline-size = 2
@@ -297,7 +297,7 @@ tray-position = center
 ;tray-offset-y = 2
 tray-offset-x = 650
 ;tray-maxsize = 18
-tray-detached = true	
+tray-detached = true
 
 
 [bar/bspwm_bottom]
@@ -346,7 +346,7 @@ font-1 = Font Awesome 5 Free:size=6:antialias=false;1
 
 ;modules-left = pogoda
 moudules-left = cpu ram
-modules-center = mpd volume filesystem 
+modules-center = mpd volume filesystem
 modules-right = updates wlan battery date menu0
 
 ;underline-size = 2
@@ -517,7 +517,7 @@ format-connected = <label-connected>
 format-connected-underline = ${colors.white}
 format-disconnected-underline = ${colors.gray}
 
-label-connected =  %essid% %signal%% 
+label-connected =  %essid% %signal%%
 label-disconnected = 
 label-disconnected-foreground = ${colors.gray}
 
@@ -555,13 +555,13 @@ type = internal/pulseaudio
 use-ui-max=false
 format-volume = <ramp-volume> <label-volume>
 format-volume-width=20
-label-volume = %percentage:3:3% 
+label-volume = %percentage:3:3%
 label-volume-foreground = ${root.foreground}
 
 
 label-muted =  muted
 
-ramp-volume-0 =   
+ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
 label-muted-foreground = ${colors.gray}

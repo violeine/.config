@@ -2,9 +2,9 @@
 
 sxhkd &
 xsetroot -cursor_name left_ptr
-bspc monitor eDP1 -d I II III
+#bspc monitor eDP1 -d I II III
 
-bspc monitor HDMI-0 -d IV V VI
+bspc monitor HDMI-1 -d IV V VI
 
 bspc config border_width         2
 bspc config window_gap          12
