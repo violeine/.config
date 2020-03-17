@@ -1,4 +1,5 @@
-export PATH=$PATH:$HOME/.script:$HOME/.node_modules/bin
+export PATH=$PATH:$HOME/.script:$HOME/.node_modules/bin:$HOME/.config/composer/vendor/bin
+export PATH="/opt/vc/bin:$PATH"
 export npm_config_prefix=~/.node_modules
 export EDITOR=nvim
 export FZF_DEFAULT_COMMAND='rg --files --hidden'
