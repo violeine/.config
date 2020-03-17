@@ -242,7 +242,6 @@ modules-right = volume updates wlan battery date menu0
 
 
 [bar/bspwm_2ndmorn]
-monitor = ${env:MONITOR:eDP1}
 bottom = false
 ;width = 200
 width = 100%
@@ -353,12 +352,12 @@ modules-right = updates wlan battery date menu0
 ;underline-color = ${colors.white}
 
 ;tray-position =hidden
-;tray-padding = 11
-;tray-transparent = true
-;tray-offset-y = 22
-;tray-offset-x = -0
-;tray-maxsize = 18
-;tray-detached = true
+tray-padding = 11
+tray-transparent = true
+tray-offset-y = 22
+tray-offset-x = -0
+tray-maxsize = 18
+tray-detached = true
 
 
 ;**********************************************************
