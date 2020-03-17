@@ -13,7 +13,7 @@ ibus-daemon -drx
 sleep 3
 #### Polybar
 #TODO: refractor script
-polybar bspwm_top& >> /dev/null
+#polybar bspwm_top& >> /dev/null
 
 polybar bspwm_2ndmorn& >> /dev/null
 

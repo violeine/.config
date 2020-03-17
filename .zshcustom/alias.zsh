@@ -14,3 +14,9 @@ alias pacin='pacman -Slq | fzf -m --preview '\''pacman -Si {1}'\'' | xargs -ro s
 alias vim=nvim
 alias vi=/usr/bin/vim
 alias viconf='nvim ~/.config/vim/.vim/vimrc'
+alias start='sudo systemctl start'
+alias restart='sudo systemctl restart'
+alias enabled='sudo systemctl enable'
+alias statusd='sudo systemctl status'
+alias stopd='sudo systemctl stop'
+alias serve='php artisan serve --host=0.0.0.0 --port=8000'
