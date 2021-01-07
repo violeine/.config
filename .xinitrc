@@ -3,7 +3,7 @@
 xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --dpi 98
 xrandr --auto
-nextcloud&
+#nextcloud&
 export QT_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export GTK_IM_MODULE=ibus

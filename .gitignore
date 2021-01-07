@@ -12,9 +12,10 @@ Google
 gtk-3.0
 htop
 ibus
-ibus-bamboo
-neofetch
+ibus-bambooneofetch
 pavucontrol.ini
 procps
 pulse
 yay
+google-chrome
+ibus-bamboo

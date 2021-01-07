@@ -44,7 +44,7 @@
 (beautiful.init "/home/violeine/.config/awesome/theme.lua")
 ;; This is used later as the default terminal and editor to turn.
 (set beautiful.useless_gap 2)
-(global terminal "st")
+(global terminal "alacritty")
 (global editor (or (os.getenv "EDITOR") "nvim"))
 (global editor_cmd (.. terminal "-e" editor))
 (global modkey "Mod4")
